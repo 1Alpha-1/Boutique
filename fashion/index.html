@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        
+        <h1>Alpha-tique</h1>
+       
+        <div class="cart">
+
+           
+            <button id="cart-button"><img src="media/cart.png" alt= "cart" width="30" height="30">(<span id="cart-count">0</span>)</button>
+            
+          
+        </div>
+
+   
+</div>
+    </header>
+    
+    <main>
+        <section class="products">
+            <div class="product" data-name="Timberland" data-price="530">
+                <h2>Timberland</h2>
+                <img src="media/5.jpg" alt="Timberland" width="140" height="140">
+                <p>Price: $430</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="product" data-name="shirt" data-price="50">
+                <h2>Henley Shirt</h2>
+                <img src="media/1.jpg" alt="Henley" width="160" height="140">
+                <p>Price: $50</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="product" data-name="shirt" data-price="50">
+                <h2>Summer Shirt</h2>
+                <img src="media/2.jpg" alt="Summer shirt" width="160" height="140">
+                <p>Price: $50</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="product" data-name="Shirt" data-price="30">
+                <h2>T-Shirt</h2>
+                <img src="media/3.jpg" alt="T-shirt" width="160" height="160">
+                <p>Price: $30</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="product" data-name="SHOE" data-price="500">
+                <h2>Alexander Mcqueen</h2>
+                <img src="media/4.jpg" alt="T-shirt" width="160" height="160">
+                <p>Price: $500</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="product" data-name="Shirt" data-price="110">
+                <h2> Saeddie Jeans</h2>
+                <img src="media/6.jpg" alt="Saeddie Jeans" width="160" height="160">
+                <p>Price: $110</p>
+               
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="product" data-name="Dress" data-price="300">
+                <h2>Bomber jacket</h2>
+                <img src="media/7.jpg" alt="Bomber jacket" width="160" height="160">
+                <p>Price: $300</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            
+            <div class="product" data-name="Bucket hat" data-price="30">
+                <h2>Prada cotton bucket hat</h2>
+                <img src="media/10.jpg" alt="FENDI FF ankle boots" width="160" height="160">
+                <p>Price: $400</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="product" data-name="Cassandre clutch bag" data-price="300">
+                <h2>Cassandre clutch bag</h2>
+                <img src="media/8.jpg" alt="Cassandre clutch bag" width="160" height="160">
+                <p>Price: $300</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="product" data-name="Shoes" data-price="600">
+                <h2>FENDI FF ankle boots</h2>
+                <img src="media/9.jpg" alt="FENDI FF ankle boots" width="160" height="160">
+                <p>Price: $600</p>
+                <button class="buy-button">Buy</button>
+            </div>
+        </section>
+
+        <section class="cart-modal" id="cart-modal">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: $0</p>
+            <button id="checkout-button">Checkout</button>
+            <br>
+            <button id="close-cart">Send</button>
+            <br>
+        
+            <button><a href="index.html">Back</button></a>
+            <script>
+
+                document.getElementById('close-cart').addEventListener('click', function() {
+                    
+                    window.location.href = 'mailto:ronaldboateng777@gmail.com?subject=Subject%20Here&body=Body%20Here';
+                });
+            </script>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <footer>
+    <div id="social">
+        <img src = media/social/facebook.png height = 30px  width = 30px>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src = media/social/instagram.png height = 30px  width = 30px>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src = media/social/twitter.png  height = 30px  width = 30px>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src = media/social/snapchat.png   height = 30px  width = 30px>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <br>
+
+    <div class="copyright">
+        <p class="copyright">Copyright@2024, Alpha-tique</p>
+    </div>
+    </footer>
+</body>
+</html>
